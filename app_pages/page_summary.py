@@ -34,8 +34,8 @@ def page_summary_body():
         f"1 - The client wants to conduct a study to visually differentiate "
         f"between healthy cherry leaves and leaves infected with powdery "
         f"mildew.\n\n"
-        f"2 - The client wants to accurately predict whether a cherry leaf is "
-        f"healthy or contains powdery mildew."
+        f"2 - The capability of predicting whether a cherry leaf is healthy "
+        f"or contains powdery mildew."
     )
 
     st.write(

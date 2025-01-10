@@ -22,7 +22,7 @@ def page_project_hypothesis_body():
         f"* The Average Images shows that the surface of the averaging healthy leaf "
         f"is clearer, whilst the surface of the averaging infected leaf has "
         f"white patches.\n\n"
-        f"* The Variability Image presents white lines accross the centre of "
+        f"* The Variability Images presents white lines accross the centre of "
         f"the averaging infected leaf, whilst the centre of the average healthy "
         f"leaf is clear."
     )
@@ -58,12 +58,12 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
     images_list = os.listdir(dir_path + '/' + label_to_display)
     img_idx = random.sample(images_list, nrows * ncols)
 
-    # create list of axes indices based on nrows and ncols
+    
     list_rows = range(0, nrows)
     list_cols = range(0, ncols)
     plot_idx = list(itertools.product(list_rows, list_cols))
 
-    # create a Figure and display images
+   
     fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=figsize)
     for x in range(0, nrows*ncols):
         img = imread(dir_path + '/' + label_to_display + '/' + img_idx[x])
