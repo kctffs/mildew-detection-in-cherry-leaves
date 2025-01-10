@@ -13,18 +13,20 @@ def page_project_hypothesis_body():
     st.write("---")
 
     st.warning(
-        f"* We are assuming that the leaves that are infected with powdery mildew have clear "
+        f"* We are assuming that the leaves that are infected "
+        f"with powdery mildew have clear "
         f"signs, mostly white pacthes on the surface, that can "
         f"seperate them from healthy leaves.\n\n"
     )
 
     st.success(
-        f"* The Average Images shows that the surface of the averaging healthy leaf "
+        f"* The Average Images shows that the surface of the "
+        f"averaging healthy leaf "
         f"is clearer, whilst the surface of the averaging infected leaf has "
         f"white patches.\n\n"
         f"* The Variability Images presents white lines accross the centre of "
-        f"the averaging infected leaf, whilst the centre of the average healthy "
-        f"leaf is clear."
+        f"the averaging infected leaf, whilst the centre of the average "
+        f"healthy leaf is clear."
     )
 
     version = 'v1'
@@ -35,7 +37,7 @@ def page_project_hypothesis_body():
     st.image(avg_uninfected, caption='Healthy Leaf - Variability and Average')
 
     st.success(
-        f"* An Images Montage shows that generally, an infected leaf has white "
+        f"* An Image Montage shows that generally, an infected leaf has white "
         f"patches on the surface. \n"
         )
 
@@ -58,12 +60,12 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
     images_list = os.listdir(dir_path + '/' + label_to_display)
     img_idx = random.sample(images_list, nrows * ncols)
 
-    
+
     list_rows = range(0, nrows)
     list_cols = range(0, ncols)
     plot_idx = list(itertools.product(list_rows, list_cols))
 
-   
+
     fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=figsize)
     for x in range(0, nrows*ncols):
         img = imread(dir_path + '/' + label_to_display + '/' + img_idx[x])
@@ -76,4 +78,4 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
     plt.tight_layout()
 
     st.pyplot(fig=fig)
-    # plt.show()
+    plt.show()

@@ -18,7 +18,7 @@ def page_mildew_detector_body():
     st.write("---")
 
     st.success(
-            f"Uploaded pictures of cherry leaves are here to assess if the leaves "
+            f"Uploaded pictures of cherry leaves here to assess if the leaves "
             f" are healthy or infected with powdery mildew."
             f" download a report of the results is available."
             )

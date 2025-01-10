@@ -30,8 +30,8 @@ def page_leaves_visualiser_body():
         avg_infected = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
         avg_uninfected = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
-        st.image(avg_infected, caption='Infected Leaf - Variability and Average')
-        st.image(avg_uninfected, caption='Healthy Leaf - Variability and Average')
+        st.image(avg_infected, caption='Infected Leaf - Variables and Average')
+        st.image(avg_uninfected, caption='Healthy Leaf - Variables and Average')
         st.write("---")
 
     if st.checkbox(
