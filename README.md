@@ -1,46 +1,6 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+### Heroku has not deployed my final project as there is a problem with the slug. As there was no education on this in the modules I was unaware of the complications this could bring and tried to search myself however. As there is strict time on this project and I could not find a relatbale solution, there is no live site. Struggling with the scenario and reading on stack to clear files I had removed a few photos thinking tha would help but to no avail. As stated before, this is new territory and was quite overwhelmed given the time left that I have no solution.
 
-## Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for the Cherry Leaves project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into your cloud IDE with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and `pip3 install -r requirements.txt`
-
-1. Open the jupyter_notebooks directory, and click on the notebook you want to open.
-
-1. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.8.18 as it inherits from the workspace, so it will be Python-3.8.18 as installed by our template. To confirm this, you can use `! python --version` in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, then you can create a new one with _Regenerate API Key_.
+# Mildrew Detection in Cherry Leaves.
 
 ## Dataset Content
 
@@ -56,26 +16,135 @@ To save time in this process, the IT team suggested an ML system that detects in
 - 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-## Hypothesis and how to validate?
+## Hypothesis
 
-- List here your project hypothesis(es) and how you envision validating it (them).
+- Leaves that are infected with powdery mildew have patches of white that are the main factor in seperating them from the healthy leaves.
+  - To understand and act upon this, there can be a study based on the investigation into the infection.
+ 
+## Validation
+
+- Enusring validation was by being presented with the averaging infected image showing white patches over the leaf, and the body of the averaging healthy leaf shows none.
+- The  variability images that is classed as healthy presents the centre of the leaf being mostly clear, whilst the infected variability images has visible white lines and patches throughout.
+  
+<img width="656" alt="Validation-Img1" src="https://github.com/user-attachments/assets/e79afc0f-f656-4f8f-a0f7-f344a0451136" />
+
+- There is a clear, visual difference between the healthy leaves and the infected leaves shown; the infected leaves show no life and almost have sad tendancies.
+
+<img width="588" alt="Validation-img2" src="https://github.com/user-attachments/assets/c45c18b2-b42c-4bd2-80bf-02747aa350b0" />
+
+- When it comes to the averaging imgages that display them, the comparison of the averagin is partially condesending as there is an unclear image produced.
+
+<img width="606" alt="Validation-Img3" src="https://github.com/user-attachments/assets/6018f1d0-a3eb-4662-a888-1a90a01de1d6" />
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+- Business Requirement 1:
+  - The inclusion of average images and variability images for each class (healthy or powdery mildew).
+  - The implemntation of data between average healthy and average powdery mildew cherry leaves.
+  - An image montage for each class to your liking.
+
+- Business Requirement 2:
+  - The capability of predicting whether a cherry leaf is healthy or contains powdery mildew.
+
+## User Stories
+
+- As a client, I can work the dashboard without confusion and understand the data shown.
+  - The dashboard has been built using streamlit, with  navigation bar to navigate easily between pages without confusion.
+- As a client, I can see the contrast between the averaging infected and averaging healthy cherry leaves.
+  - The page named 'Leaves Visualiser' shows the client the difference between the averaging healthy and the averaging infected cherry leaves which also includes text.
+- As a client, I can display a images montage of cherry leaves that are either healthy or infected with powdery mildew.
+  - The page named 'Leaves Visualiser' implements a feature that the client can generate a montage of healthy or infected leaves. This also includes refreshing for a different set of images.
+- As a client, I want a ML model to estimate with a 97% accuracy rating by whether a random cherry leaf is either healthy or is infected with powdery mildew.
+  - The page named 'Powdery Mildew Detection' page consists of a feature that a user can upload images, and then the ML Model will produce a predicition with accuracy whether the leaf is infected with powdery mildew or healthy.
+- As a client, I can produce a report by a set of images. These images are undisclosed by a binary classifier and the report tells me which leaves are infected.
+  - When a client has uploaded images of cherry leaves on the 'Powdery Mildew Detection' page, they will be provided with an analysis report classifying all uploaded images with their results.
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+- What are the business requirements?
+  - The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+  - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+- Is there any business requirement that can be answered with conventional data analysis?
+  - Yes, we can use conventional data analysis to conduct a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+- Does the client need a dashboard or an API endpoint?
+  - The client needs a dashboard.
+- What does the client consider as a successful project outcome?
+  - A study showing how to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+  - Also, the capability to predict if a cherry leaf is healthy or contains powdery mildew.
+- Can you break down the project into Epics and User Stories?
+  - Information gathering and data collection.
+  - Data visualization, cleaning, and preparation.
+  - Model training, optimization and validation.
+  - Dashboard planning, designing, and development.
+  - Dashboard deployment and release.
+  - Ethical or Privacy concerns?
+  - The client provided the data under an NDA (non-disclosure agreement), therefore the data should only be shared with professionals that are officially involved in the project.
+- Does the data suggest a particular model?
+  - The data suggests a binary classifier, indicating whether a particular cherry leaf is healthy or contains powdery mildew.
+- What are the model's inputs and intended outputs?
+  - The input is a cherry leaf image and the output is a prediction of whether the cherry leaf is healthy or contains powdery mildew.
+- What are the criteria for the performance goal of the predictions?
+  - We agreed with the client a degree of 97% accuracy.
+- How will the client benefit?
+  - The client will not supply the market with a product of compromised quality.
 
 ## Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+### Page 1: Project Summary
+
+- Information that includes the content provided for the study which is:
+  - Powdery mildew is a fungal disease caused by Podosphaera clandestina that affects cherry trees. The fungus causes the leaves to curl up, and may appear as white powdery patches on the leaves. The disease has to be visually identified, which can take an employee up to half an hour per tree, however the treatment only takes a minute if necessary. Using this machine learning system, an employee can accurately identify infected trees quickly, to make the inspection process possible within the time limitations.
+
+- Project Dataset
+  -The dataset, available on Kaggle, contains over 4000 images of cherry tree leaves. Half the leaves are infected with powdery mildew, and the other half are healthy.
+
+- The Project has two business requirements:
+  - The client wants to conduct a study to visually differentiate between healthy cherry leaves and leaves infected with powdery mildew.
+  - The capability of predicting whether a cherry leaf is healthy or contains powdery mildew."
+
+<img width="612" alt="Summary-Page" src="https://github.com/user-attachments/assets/0be3eada-6740-4060-a1ec-c3854418d180" />
+
+### Page 2: Leaves Visualizer
+
+This page achieves Business Requirement 1: Visually differentiating a leaf infected with powdery mildew from a healthy leaf.
+
+Checkbox 1: Differences between the variability and averages image.
+
+Checkbox 2: Differences in average infected and average healthy leaves.
+
+Checkbox 3: Image Montage.
+
+<img width="590" alt="Powdery-Mildew-Detector-Page" src="https://github.com/user-attachments/assets/bbfa03d2-8dd0-4f20-b11b-8138505eebab" />
+<img width="679" alt="Powdery-Mildew-Detector-Page2" src="https://github.com/user-attachments/assets/b5e3122b-ce37-44a8-bb77-f7f992d1e6a5" />
+
+## Page 3: Powdery Mildew Detection
+
+This page achieves Business Requirement 2: The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+
+UI consists of a file upload widget where the client can go and download their own set of images and then upload multiple cherry leaf images for their own liking. After the cient uploads their images they will have a scenario where:
+- Will be presented with a estimated statement, which will then inform whether the leaf is infected with powdery mildew or healthy.
+- The client will see a table with the image names and prediction results.
+
+<img width="602" alt="Powdery-Mildew-Detector-Page3" src="https://github.com/user-attachments/assets/42e4af90-bcb5-427c-a955-6b0297d1e011" />
+
+## Page 4: Project Hypothesis
+
+We are assuming that the leaves that are infected with powdery mildew have clear signs, mostly white pacthes on the surface, that can seperate them from healthy leaves. The Average Images shows that the surface of the averaging healthy leaf is clearer, whilst the surface of the averaging infected leaf has white patches. The Variability Images presents white lines accross the centre of the averaging infected leaf, whilst the centre of the average healthy leaf is clear.
+
+<img width="634" alt="Powdery-Mildew-Detector-Page4" src="https://github.com/user-attachments/assets/bcbd03a2-c6d8-4b3e-9bb6-9e19e615850d" />
+
+## Page 5: ML Performance Metrics (X)
+
+Labelling the frequencies for **train**, **test** &  **validation** sets. The dataset contains an equal number of infected and healthy leaves.
+ML Model History shows how the ML Model trained, increasing the accuracy and lowering the loss.
 
 ## Unfixed Bugs
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+- Bugs that are unfixed in this project include the final page not being rendered as code fails prior in the ModellingEvaluating notebook.
+  - To solve this I would have to go back over the code and try and figure out the solution to the problem as I could not find the necessary means in the time left for this project however the code is still completed there and just needs altering.
+- Heroku has not deployed my final project as there is a problem with the slug. As there was no education on this in the modules I was unaware of the complications this could bring and tried to search myself however. As there is strict time on this project and I could not find a relatbale solution, there is no live site.
+
+<img width="740" alt="Screenshot 2025-01-10 at 09 43 48" src="https://github.com/user-attachments/assets/59b938e2-3f0b-405b-9fb8-e2c5d02c0665" />
 
 ## Deployment
 
@@ -94,24 +163,33 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+numpy==1.26.1 - Numpy was used to convert the images into arrays.
+pandas==2.1.1 - Pandas was used to provided the foundation for the data to be in a dataframe.
+matplotlib==3.8.0 - Matplotlib was used for plotting both the images and data.
+seaborn==0.13.2 - Seaborn was used in conjunction with Matplotlib.
+streamlit==1.40.2 - Streamlit was used for running the app and creating the dashboard.
+tensorflow-cpu==2.16.1 - Tensorflow was the import used for the creation of the ML Model.
+keras>=3.0.0 - Keras was used in conjunction with Tensorflow for the creation of the ML Model.
+
+## Platforms Used
+
+[Gitpod](https://www.gitpod.io/).
+[Github](https://github.com/).
+[Heroku](https://www.heroku.com/).
+[Kaggle](https://www.kaggle.com/).
+
+## Validation
+
+- Code was put through the [CI PEP8 Python Linter](https://pep8ci.herokuapp.com) and passed with screenshots provided.
+
+<img width="835" alt="pep8-valid-1" src="https://github.com/user-attachments/assets/4035e548-27ea-46da-8f63-605bfedfeb3d" />
+<img width="836" alt="pep8-valid-2" src="https://github.com/user-attachments/assets/e521611a-1739-4ca5-961d-49ace9603f40" />
+<img width="804" alt="pep8-valid-3" src="https://github.com/user-attachments/assets/2d7ab029-b0ce-4282-82eb-c85b0f1e35cc" />
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
+- [Kaggle Cherry Leaves]([https://www.kaggle.com/](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)). - For the use of their data source.
+- [Code Institute - Walkthrough Project 01 - Malaria Detector](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project.
+- [Code Institute - Walkthrough Project 02 - Churnometer](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project.
+- [cla-cif](https://github.com/cla-cif) - For the inspiration in code used during this project.
 
-### Content
-
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
-
-## Acknowledgements (optional)
-
-- Thank the people who provided support throughout this project.
