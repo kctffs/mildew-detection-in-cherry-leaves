@@ -1,4 +1,4 @@
-### Heroku has not deployed my final project as there is a problem with the slug. As there was no education on this in the modules I was unaware of the complications this could bring and tried to search myself however. As there is strict time on this project and I could not find a relatbale solution, there is no live site. Struggling with the scenario and reading on stack to clear files I had removed a few photos thinking tha would help but to no avail. As stated before, this is new territory and was quite overwhelmed given the time left that I have no solution.
+### Heroku has not deployed my final project as there is a problem with the 'slug'. As there was no education on this in the modules I was unaware of the complications this could bring and tried to research myself however, as there is strict time on this project and I could not find a relatable solution, there is no live site eventhough it performs. Struggling with the scenario, reading on stack that I was to clear files therefore, I had removed a few photos thinking tha would help but to no avail. As stated before, this is new territory and was quite overwhelmed given the time left that I have no solution.
 
 # Mildrew Detection in Cherry Leaves.
 
@@ -142,7 +142,7 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 
 - Bugs that are unfixed in this project include the final page not being rendered as code fails prior in the ModellingEvaluating notebook.
   - To solve this I would have to go back over the code and try and figure out the solution to the problem as I could not find the necessary means in the time left for this project however the code is still completed there and just needs altering.
-- Heroku has not deployed my final project as there is a problem with the slug. As there was no education on this in the modules I was unaware of the complications this could bring and tried to search myself however. As there is strict time on this project and I could not find a relatbale solution, there is no live site.
+- Heroku has not deployed my final project as there is a problem with the slug. As there was no education on this in the modules I was unaware of the complications this could bring and tried to search myself however. As there is strict time on this project and I could not find a relatable solution, there is no live site.
 
 <img width="740" alt="Screenshot 2025-01-10 at 09 43 48" src="https://github.com/user-attachments/assets/59b938e2-3f0b-405b-9fb8-e2c5d02c0665" />
 
@@ -150,7 +150,7 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 
 ### Heroku
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
+- The App live link is: `https://mildewdetection-in-cherryleave-0fd5f5cde4e1.herokuapp.com/`(X)
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
@@ -189,7 +189,7 @@ keras>=3.0.0 - Keras was used in conjunction with Tensorflow for the creation of
 ## Credits
 
 - [Kaggle Cherry Leaves]([https://www.kaggle.com/](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)). - For the use of their data source.
-- [Code Institute - Walkthrough Project 01 - Malaria Detector](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project.
-- [Code Institute - Walkthrough Project 02 - Churnometer](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project.
-- [cla-cif](https://github.com/cla-cif) - For the inspiration in code used during this project.
+- [Code Institute - Walkthrough Project 01 - Malaria Detector](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project for example the code revolving around image data.
+- [Code Institute - Walkthrough Project 02 - Churnometer](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project for example the directories.
+- [cla-cif](https://github.com/cla-cif) - For the inspiration alongside the walkthrough projects.
 
