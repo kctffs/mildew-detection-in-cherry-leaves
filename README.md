@@ -1,6 +1,6 @@
 ### Heroku has not deployed my final project as there is a problem with the 'slug'. As there was no education on this in the modules I was unaware of the complications this could bring and tried to research myself however, as there is strict time on this project and I could not find a relatable solution, there is no live site eventhough it performs. Struggling with the scenario, reading on stack that I was to clear files therefore, I had removed a few photos thinking tha would help but to no avail. As stated before, this is new territory and was quite overwhelmed given the time left that I have no solution.
 
-# Mildrew Detection in Cherry Leaves.
+# Mildew Detection in Cherry Leaves.
 
 ## Dataset Content
 
@@ -23,16 +23,16 @@ To save time in this process, the IT team suggested an ML system that detects in
  
 ## Validation
 
-- Enusring validation was by being presented with the averaging infected image showing white patches over the leaf, and the body of the averaging healthy leaf shows none.
+- Ensuring validation was by being presented with the averaging infected image showing white patches over the leaf, and the body of the averaging healthy leaf shows none.
 - The  variability images that is classed as healthy presents the centre of the leaf being mostly clear, whilst the infected variability images has visible white lines and patches throughout.
   
 <img width="656" alt="Validation-Img1" src="https://github.com/user-attachments/assets/e79afc0f-f656-4f8f-a0f7-f344a0451136" />
 
-- There is a clear, visual difference between the healthy leaves and the infected leaves shown; the infected leaves show no life and almost have sad tendancies.
+- There is a clear, visual difference between the healthy leaves and the infected leaves shown; the infected leaves show no life and almost have sad tendencies.
 
 <img width="588" alt="Validation-img2" src="https://github.com/user-attachments/assets/c45c18b2-b42c-4bd2-80bf-02747aa350b0" />
 
-- When it comes to the averaging imgages that display them, the comparison of the averagin is partially condesending as there is an unclear image produced.
+- When it comes to the averaging images that display them, the comparison of the averaging is partially condescending as there is an unclear image produced.
 
 <img width="606" alt="Validation-Img3" src="https://github.com/user-attachments/assets/6018f1d0-a3eb-4662-a888-1a90a01de1d6" />
 
@@ -40,7 +40,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 - Business Requirement 1:
   - The inclusion of average images and variability images for each class (healthy or powdery mildew).
-  - The implemntation of data between average healthy and average powdery mildew cherry leaves.
+  - The implementation of data between average healthy and average powdery mildew cherry leaves.
   - An image montage for each class to your liking.
 
 - Business Requirement 2:
@@ -55,7 +55,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 - As a client, I can display a images montage of cherry leaves that are either healthy or infected with powdery mildew.
   - The page named 'Leaves Visualiser' implements a feature that the client can generate a montage of healthy or infected leaves. This also includes refreshing for a different set of images.
 - As a client, I want a ML model to estimate with a 97% accuracy rating by whether a random cherry leaf is either healthy or is infected with powdery mildew.
-  - The page named 'Powdery Mildew Detection' page consists of a feature that a user can upload images, and then the ML Model will produce a predicition with accuracy whether the leaf is infected with powdery mildew or healthy.
+  - The page named 'Powdery Mildew Detection' page consists of a feature that a user can upload images, and then the ML Model will produce a prediction with accuracy whether the leaf is infected with powdery mildew or healthy.
 - As a client, I can produce a report by a set of images. These images are undisclosed by a binary classifier and the report tells me which leaves are infected.
   - When a client has uploaded images of cherry leaves on the 'Powdery Mildew Detection' page, they will be provided with an analysis report classifying all uploaded images with their results.
 
@@ -73,8 +73,8 @@ To save time in this process, the IT team suggested an ML system that detects in
   - Also, the capability to predict if a cherry leaf is healthy or contains powdery mildew.
 - Can you break down the project into Epics and User Stories?
   - Information gathering and data collection.
-  - Data visualization, cleaning, and preparation.
-  - Model training, optimization and validation.
+  - Data visualisation, cleaning, and preparation.
+  - Model training, optimisation and validation.
   - Dashboard planning, designing, and development.
   - Dashboard deployment and release.
   - Ethical or Privacy concerns?
@@ -104,7 +104,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 <img width="612" alt="Summary-Page" src="https://github.com/user-attachments/assets/0be3eada-6740-4060-a1ec-c3854418d180" />
 
-### Page 2: Leaves Visualizer
+### Page 2: Leaves Visualiser
 
 This page achieves Business Requirement 1: Visually differentiating a leaf infected with powdery mildew from a healthy leaf.
 
@@ -121,7 +121,7 @@ Checkbox 3: Image Montage.
 
 This page achieves Business Requirement 2: The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-UI consists of a file upload widget where the client can go and download their own set of images and then upload multiple cherry leaf images for their own liking. After the cient uploads their images they will have a scenario where:
+UI consists of a file upload widget where the client can go and download their own set of images and then upload multiple cherry leaf images for their own liking. After the client uploads their images they will have a scenario where:
 - Will be presented with a estimated statement, which will then inform whether the leaf is infected with powdery mildew or healthy.
 - The client will see a table with the image names and prediction results.
 
@@ -129,7 +129,7 @@ UI consists of a file upload widget where the client can go and download their o
 
 ## Page 4: Project Hypothesis
 
-We are assuming that the leaves that are infected with powdery mildew have clear signs, mostly white pacthes on the surface, that can seperate them from healthy leaves. The Average Images shows that the surface of the averaging healthy leaf is clearer, whilst the surface of the averaging infected leaf has white patches. The Variability Images presents white lines accross the centre of the averaging infected leaf, whilst the centre of the average healthy leaf is clear.
+We are assuming that the leaves that are infected with powdery mildew have clear signs, mostly white patches on the surface, that can separate them from healthy leaves. The Average Images shows that the surface of the averaging healthy leaf is clearer, whilst the surface of the averaging infected leaf has white patches. The Variability Images presents white lines across the centre of the averaging infected leaf, whilst the centre of the average healthy leaf is clear.
 
 <img width="634" alt="Powdery-Mildew-Detector-Page4" src="https://github.com/user-attachments/assets/bcbd03a2-c6d8-4b3e-9bb6-9e19e615850d" />
 
