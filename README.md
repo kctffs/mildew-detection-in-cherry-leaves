@@ -155,9 +155,25 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 
 ## Deployment
 
-### Heroku
 
-- The App live link is: `https://mildewdetection-in-cherryleave-0fd5f5cde4e1.herokuapp.com/`(X)
+### Render
+
+- The App live link is:
+- As (Render)[https://render.com/] was used, Procfile and runtime.txt were not needed, so the files were removed.
+- The project was deployed to Render using the following steps:
+
+1. Log in to Render and create a new web hosting service.
+2. Connect your corresponding repository with GitHub.
+3. Confifure the settings so that the **Root Directory** is *blank*, **Environment** is *Python 3*, **Region** is *EU* and **Branch** is *main*.
+4. Set the build command to `pip install -r requirements.txt && ./setup.sh`.
+5. Set the start command to `streamlit run app.py`.
+6. Choose the free plan.
+7. On the advanced, add **PORT** as a Key and **8501** as it's value. Secondly, add **PYTHON_VERSION** as a Key and **3.12.2** as it's Value.
+8. Select No on auto deployment and deploy.
+
+
+### Heroku (Deployment Steps, not used)
+
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
