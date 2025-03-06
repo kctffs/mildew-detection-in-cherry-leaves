@@ -146,15 +146,12 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 - The data mining methodology and techniques combined with assistance from more experienced practitioners can be an essential tool to understand the concepts and steps involved in the entire data mining process.
 
 ## Unfixed Bugs
-
-- Bugs that are unfixed in this project include the final page not being rendered as code fails prior in the ModellingEvaluating notebook.
-  - To solve this I would have to go back over the code and try and figure out the solution to the problem as I could not find the necessary means in the time left for this project however the code is still completed there and just needs altering.
-- Heroku has not deployed my final project as there is a problem with the slug. As there was no education on this in the modules I was unaware of the complications this could bring and tried to search myself however. As there is strict time on this project and I could not find a relatable solution, there is no live site.
+- Heroku has not deployed my final project as there is a problem with the slug. Slug size has not been reduced however deployment has been successful on another site.
+  - To solve this problem, I would have to either include files into a .slugignore or reduce the images.
 
 <img width="740" alt="Screenshot 2025-01-10 at 09 43 48" src="https://github.com/user-attachments/assets/59b938e2-3f0b-405b-9fb8-e2c5d02c0665" />
 
 ## Deployment
-
 
 ### Render
 
@@ -171,7 +168,6 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 7. On the advanced, add **PORT** as a Key and **8501** as it's value. Secondly, add **PYTHON_VERSION** as a Key and **3.12.2** as it's Value.
 8. Select No on auto deployment and deploy.
 
-
 ### Heroku (Deployment Steps, not used)
 
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
@@ -186,19 +182,20 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 
 ## Main Data Analysis and Machine Learning Libraries
 
-numpy==1.26.1 - Numpy was used to convert the images into arrays.
-pandas==2.1.1 - Pandas was used to provided the foundation for the data to be in a dataframe.
-matplotlib==3.8.0 - Matplotlib was used for plotting both the images and data.
-seaborn==0.13.2 - Seaborn was used in conjunction with Matplotlib.
-streamlit==1.40.2 - Streamlit was used for running the app and creating the dashboard.
-tensorflow-cpu==2.16.1 - Tensorflow was the import used for the creation of the ML Model.
-keras>=3.0.0 - Keras was used in conjunction with Tensorflow for the creation of the ML Model.
+- numpy==1.26.1 - Numpy was used to convert the images into arrays.
+- pandas==2.1.1 - Pandas was used to provided the foundation for the data to be in a dataframe.
+- matplotlib==3.8.0 - Matplotlib was used for plotting both the images and data.
+- seaborn==0.13.2 - Seaborn was used in conjunction with Matplotlib.
+- streamlit==1.40.2 - Streamlit was used for running the app and creating the dashboard.
+- tensorflow-cpu==2.16.1 - Tensorflow was the import used for the creation of the ML Model.
+- keras>=3.0.0 - Keras was used in conjunction with Tensorflow for the creation of the ML Model.
+ - plotly==5.17.0, Pillow==10.0.1, joblib==1.4.2, scikit-learn==1.3.1
 
 ## Platforms Used
 
 [Gitpod](https://www.gitpod.io/).
 [Github](https://github.com/).
-[Heroku](https://www.heroku.com/).
+[Render](https://render.com/).
 [Kaggle](https://www.kaggle.com/).
 
 ## Validation
@@ -214,5 +211,5 @@ keras>=3.0.0 - Keras was used in conjunction with Tensorflow for the creation of
 - [Kaggle Cherry Leaves]([https://www.kaggle.com/](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)). - For the use of their data source.
 - [Code Institute - Walkthrough Project 01 - Malaria Detector](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project for example the code revolving around image data.
 - [Code Institute - Walkthrough Project 02 - Churnometer](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project for example the directories.
-- [cla-cif](https://github.com/cla-cif) - For the inspiration alongside the walkthrough projects.
+- [cla-cif](https://github.com/cla-cif) - For inspiration for the first model I used before I retrained later, alongside the module contents and walkthrough projects on models.
 
