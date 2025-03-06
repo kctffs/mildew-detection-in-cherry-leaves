@@ -1,4 +1,4 @@
-### Heroku has not deployed my final project as there is a problem with the 'slug'. As there was no education on this in the modules I was unaware of the complications this could bring and tried to research myself however, as there is strict time on this project and I could not find a relatable solution, there is no live site eventhough it performs. Struggling with the scenario, reading on stack that I was to clear files therefore, I had removed a few photos thinking tha would help but to no avail. As stated before, this is new territory and was quite overwhelmed given the time left that I have no solution.
+### This project was not deployed through Heroku as there is a problem with the slug size. After being assisted by the tutor team and advised to deploy by [Render](https://render.com/) I will provide the appropriate details regarding that site.
 
 # Mildew Detection in Cherry Leaves.
 
