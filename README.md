@@ -138,6 +138,13 @@ We are assuming that the leaves that are infected with powdery mildew have clear
 Labelling the frequencies for **train**, **test** &  **validation** sets. The dataset contains an equal number of infected and healthy leaves.
 ML Model History shows how the ML Model trained, increasing the accuracy and lowering the loss.
 
+## CRISP-DM
+
+- The CRoss-Industry Standard Process for Data Mining (CRISP-DM), created in the end of 1996 by leaders of Daimler-Benz, is a non-proprietary, documented and freely available data mining methodology and process model.
+- CRISP-DM provides a generic process model capable of being modified for the particular needs of any industry.
+- This model encourages best practices and offers organizations the structure needed to realize better, faster results from data mining due the complete blueprint for conducting a data mining project.
+- The data mining methodology and techniques combined with assistance from more experienced practitioners can be an essential tool to understand the concepts and steps involved in the entire data mining process.
+
 ## Unfixed Bugs
 
 - Bugs that are unfixed in this project include the final page not being rendered as code fails prior in the ModellingEvaluating notebook.
