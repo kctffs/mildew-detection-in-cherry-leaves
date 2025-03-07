@@ -102,6 +102,7 @@ To save time in this process, the IT team suggested an ML system that detects in
   - The client wants to conduct a study to visually differentiate between healthy cherry leaves and leaves infected with powdery mildew.
   - The capability of predicting whether a cherry leaf is healthy or contains powdery mildew."
 
+<img width="278" alt="Streamlit-menu" src="https://github.com/user-attachments/assets/85105ae6-4513-4375-a642-3c09fb10ed98" />
 <img width="612" alt="Summary-Page" src="https://github.com/user-attachments/assets/0be3eada-6740-4060-a1ec-c3854418d180" />
 
 ### Page 2: Leaves Visualiser
@@ -133,29 +134,35 @@ We are assuming that the leaves that are infected with powdery mildew have clear
 
 <img width="634" alt="Powdery-Mildew-Detector-Page4" src="https://github.com/user-attachments/assets/bcbd03a2-c6d8-4b3e-9bb6-9e19e615850d" />
 
-## Page 5: ML Performance Metrics (X)
+## Page 5: ML Performance Metrics
 
 Labelling the frequencies for **train**, **test** &  **validation** sets. The dataset contains an equal number of infected and healthy leaves.
 ML Model History shows how the ML Model trained, increasing the accuracy and lowering the loss.
+
+<img width="424" alt="Page5-ML" src="https://github.com/user-attachments/assets/76fac05e-7505-419b-98c4-d747746d54e0" />
 
 ## CRISP-DM
 
 - The CRoss-Industry Standard Process for Data Mining (CRISP-DM), created in the end of 1996 by leaders of Daimler-Benz, is a non-proprietary, documented and freely available data mining methodology and process model.
 - CRISP-DM provides a generic process model capable of being modified for the particular needs of any industry.
 - This model encourages best practices and offers organizations the structure needed to realize better, faster results from data mining due the complete blueprint for conducting a data mining project.
-- The data mining methodology and techniques combined with assistance from more experienced practitioners can be an essential tool to understand the concepts and steps involved in the entire data mining process.
+- The data mining methodology and techniques combined with assistance from more experienced practitioners can be an essential tool to understand the concepts and steps involved in the entire data mining process. [Source](https://almirgouvea.github.io/The-Crisp-DM-Methodology/chapters/definition.html)
 
 ## Unfixed Bugs
 - Heroku has not deployed my final project as there is a problem with the slug. Slug size has not been reduced however deployment has been successful on another site.
-  - To solve this problem, I would have to either include files into a .slugignore or reduce the images.
+  - To solve this problem I would have to, either, include files into a .slugignore or reduce the images.
+- On Page 5: ML Performance Metrics, there is a visable error shown and after research it is concluded that the streamlit package downloaded is outdated.
+  - To solve this problem, I would download a recent version. (however, as this was the package provided, I stuck with resources that I was given).
+  - Source [Discuss](https://discuss.streamlit.io/t/attributeerror-module-streamlit-has-no-attribute-beta-columns/8147).
 
+<img width="830" alt="Streamlit-outdated" src="https://github.com/user-attachments/assets/690bc9dc-4fd4-487c-895a-53a7ca2b6561" />
 <img width="740" alt="Screenshot 2025-01-10 at 09 43 48" src="https://github.com/user-attachments/assets/59b938e2-3f0b-405b-9fb8-e2c5d02c0665" />
 
 ## Deployment
 
 ### Render
 
-- The App live link is:
+- The App live link is: https://mildew-detection-in-cherry-leaves-1.onrender.com/
 - As (Render)[https://render.com/] was used, Procfile and runtime.txt were not needed, so the files were removed.
 - The project was deployed to Render using the following steps:
 
