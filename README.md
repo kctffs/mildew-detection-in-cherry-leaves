@@ -2,6 +2,8 @@
 
 # Mildew Detection in Cherry Leaves.
 
+Live Link: [Powdery Mildew Detector](https://mildew-detection-in-cherry-leaves-1.onrender.com/)
+
 ## Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
@@ -154,7 +156,6 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 - Heroku has not deployed my final project as there is a problem with the slug. Slug size has not been reduced however deployment has been successful on another site.
   - To solve this problem I would have to, either, include files into a .slugignore or reduce the images.
 
-<img width="830" alt="Streamlit-outdated" src="https://github.com/user-attachments/assets/690bc9dc-4fd4-487c-895a-53a7ca2b6561" />
 <img width="740" alt="Screenshot 2025-01-10 at 09 43 48" src="https://github.com/user-attachments/assets/59b938e2-3f0b-405b-9fb8-e2c5d02c0665" />
 
 ## Deployment
@@ -174,7 +175,7 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 7. On the advanced, add **PORT** as a Key and **8501** as it's value. Secondly, add **PYTHON_VERSION** as a Key and **3.12.2** as it's Value.
 8. Select No on auto deployment and deploy.
 
-### Heroku (Deployment Steps, not used)
+### Heroku (Initial Use)
 
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
