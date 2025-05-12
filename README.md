@@ -140,6 +140,8 @@ Labelling the frequencies for **train**, **test** &  **validation** sets. The da
 ML Model History shows how the ML Model trained, increasing the accuracy and lowering the loss.
 
 <img width="424" alt="Page5-ML" src="https://github.com/user-attachments/assets/76fac05e-7505-419b-98c4-d747746d54e0" />
+<img width="794" alt="ML-Hist" src="https://github.com/user-attachments/assets/1ebc31e2-068c-4730-ae28-78176b5ca5b6" />
+<img width="803" alt="ML-Perf" src="https://github.com/user-attachments/assets/ac3b839a-348f-45ab-9766-51be8213556f" />
 
 ## CRISP-DM
 
@@ -151,9 +153,6 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 ## Unfixed Bugs
 - Heroku has not deployed my final project as there is a problem with the slug. Slug size has not been reduced however deployment has been successful on another site.
   - To solve this problem I would have to, either, include files into a .slugignore or reduce the images.
-- On Page 5: ML Performance Metrics, there is a visable error shown and after research it is concluded that the streamlit package downloaded is outdated.
-  - To solve this problem, I would download a recent version. (however, as this was the package provided, I stuck with resources that I was given).
-  - Source [Discuss](https://discuss.streamlit.io/t/attributeerror-module-streamlit-has-no-attribute-beta-columns/8147).
 
 <img width="830" alt="Streamlit-outdated" src="https://github.com/user-attachments/assets/690bc9dc-4fd4-487c-895a-53a7ca2b6561" />
 <img width="740" alt="Screenshot 2025-01-10 at 09 43 48" src="https://github.com/user-attachments/assets/59b938e2-3f0b-405b-9fb8-e2c5d02c0665" />
@@ -163,7 +162,7 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 ### Render
 
 - The App live link is: https://mildew-detection-in-cherry-leaves-1.onrender.com/
-- As (Render)[https://render.com/] was used, Procfile and runtime.txt were not needed, so the files were removed.
+- As [Render](https://render.com/) was used, Procfile and runtime.txt were not needed, so the files were removed.
 - The project was deployed to Render using the following steps:
 
 1. Log in to Render and create a new web hosting service.
@@ -218,5 +217,5 @@ ML Model History shows how the ML Model trained, increasing the accuracy and low
 - [Kaggle Cherry Leaves]([https://www.kaggle.com/](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)). - For the use of their data source.
 - [Code Institute - Walkthrough Project 01 - Malaria Detector](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project for example the code revolving around image data.
 - [Code Institute - Walkthrough Project 02 - Churnometer](https://codeinstitute.net/). - For the step by step guide to the understanding and inspiring the code during the project for example the directories.
-- [cla-cif](https://github.com/cla-cif) - For inspiration for the first model I used before I retrained later, alongside the module contents and walkthrough projects on models.
+- [cla-cif](https://github.com/cla-cif) - Inspiration for the first model used before retrained later, alongside the module contents and walkthrough projects on models.
 
