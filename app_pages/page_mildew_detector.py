@@ -18,9 +18,9 @@ def page_mildew_detector_body():
     st.write("---")
 
     st.success(
-            f"Uploaded pictures of cherry leaves here to assess if the leaves "
+            f"Upload images (PNG) of cherry leaves here to assess if the leaves "
             f" are healthy or infected with powdery mildew."
-            f" download a report of the results is available."
+            f" A downloaded report of the results is available."
             )
 
     st.write(
@@ -32,7 +32,7 @@ def page_mildew_detector_body():
     st.write("---")
 
     images_buffer = st.file_uploader(
-        'Uploaded images of the leaves here. You may select more than one.',
+        'Upload images of the leaves here. You may select more than one.',
         type='png', accept_multiple_files=True)
 
     if images_buffer is not None:

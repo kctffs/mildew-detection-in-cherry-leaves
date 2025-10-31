@@ -15,8 +15,8 @@ def page_project_hypothesis_body():
     st.warning(
         f"* We are assuming that the leaves that are infected "
         f"with powdery mildew have clear "
-        f"signs, mostly white pacthes on the surface, that can "
-        f"seperate them from healthy leaves.\n\n"
+        f"signs, mostly white patches on the surface, that will "
+        f"seperate them from the healthy leaves.\n\n"
     )
 
     st.success(

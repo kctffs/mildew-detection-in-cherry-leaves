@@ -35,13 +35,13 @@ def page_leaves_visualiser_body():
         st.write("---")
 
     if st.checkbox(
-            "Differences in average infected and average healthy leaves"):
+            "Differences in average infected and healthy leaves"):
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
         st.info(
             f"* There is a visible difference between the average "
-            f"leaves, however, this is not visible in the average"
-            f" differences image of leaves.")
+            f"leaves however, this is not visible in the average"
+            f" differences image.")
         st.image(diff_between_avgs,
                  caption='Difference between the average images')
 

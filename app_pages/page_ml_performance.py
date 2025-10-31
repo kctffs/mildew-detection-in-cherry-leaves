@@ -36,8 +36,8 @@ def page_ml_performance_metrics():
     st.write("### Generalised Performance on Test Set")
     st.info(f"* The model acheived a high accuracy on the test "
             f"set, which means it accurately predicts whether a leaf is "
-            f"healthy or infected with powdery mildew most of the time, "
-            f"exceeding the 97% acccuracy criteria agreed with the client "
+            f"healthy or infected with powdery mildew. "
+            f"Consistantly 97% and above acccuracy agreed with the client "
             f"as the project goal.")
     st.dataframe(pd.DataFrame(load_test_evaluation(version),
                               index=['Loss', 'Accuracy']))
