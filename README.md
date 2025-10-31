@@ -1,8 +1,8 @@
-### This project was not deployed through Heroku as there is a problem with the slug size. After being assisted by the tutor team and advised to deploy by [Render](https://render.com/) I will provide the appropriate details regarding that site.
+### This project was not deployed through Heroku although, being assisted by the tutor team and advised to deploy by [Render](https://render.com/) I will provide the appropriate deployment details as well as Heroku's.
 
 # Mildew Detection in Cherry Leaves.
 
-Live Link: [Powdery Mildew Detector](https://mildew-detection-in-cherry-leaves-1.onrender.com/)
+Live Link: [Powdery Mildew Detector](https://mildew-detection-in-cherry-leaves-1.onrender.com)
 
 ## Dataset Content
 
